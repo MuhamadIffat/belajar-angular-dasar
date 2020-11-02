@@ -11,10 +11,11 @@ export class HeroesComponent implements OnInit {
 //Refactor this property with interface hero
   // hero = "Windstrom";
 
-  hero: Hero = {
-    id: 1,
-    name: "Windstrom"
-  };
+ selectedHero: Hero;
+
+ onSelect(hero: Hero){
+   this.selectedHero = hero;
+ }
 
   heroes = HEROES;
 
