@@ -7,7 +7,7 @@
             <span class="badge">{{hero.id}}</span> {{hero.name}}
         </li>
     </ul>
-    <div *ngIf="selectedHero.name">
+    <!-- <div *ngIf="selectedHero.name">
         <h2>{{selectedHero.name | uppercase}} Details</h2>
         <div>
             <span>id:</span>{{selectedHero.id}}
@@ -18,4 +18,5 @@
                 <input [(ngModel)]="selectedHero.name" placeholder="name">
             </label>
         </div>
-    </div>
+    </div> -->
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
