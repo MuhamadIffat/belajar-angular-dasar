@@ -9,7 +9,7 @@ export class HeroService {
 
   constructor() { }
 
-  get heroes():Hero[]{
+  getHeroes():Hero[]{
     return HEROES;
   }
 }
