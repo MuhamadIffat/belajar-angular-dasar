@@ -24,4 +24,8 @@ export class HeroService {
     this.messagesService.add(`HeroService: fetch hero id=${id}`);
     return of(HEROES.find(hero=> hero.id === id));
   }
+
+  private log(message: string){
+    this.messagesService.add(`HeroService: ${message}`);
+  }
 }
