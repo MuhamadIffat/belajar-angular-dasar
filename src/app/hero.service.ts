@@ -9,6 +9,7 @@ import { MessagesService } from './messages.service';
   providedIn: 'root'
 })
 export class HeroService {
+  private heroesUrl = 'api/heroes';
 
   constructor(
     private messagesService: MessagesService,
